@@ -11,6 +11,7 @@
         // Deletes an existing entity of type T from the database.
         int Delete(T entity);
         // Deletes a range of entities of type T from the database.
+
         int DeleteRange(IEnumerable<T> entities);
         // Returns the total number of entities of type T in the database.
         int Count();
@@ -26,6 +27,7 @@
         IEnumerable<T> GetEnumerable();
         // Returns an IQueryable of entities of type T from the database.
         IQueryable<T> GetQueryable();
+        
 
     }
 }
