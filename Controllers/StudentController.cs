@@ -80,6 +80,7 @@ namespace StudentWebApi.Controllers
             return student;
         }
 
+
         // GET: api/student/delete-student-by-id/{id}
         [HttpGet("delete-student-by-id/{id}")]
         public OperationResponse DeleteStudentsById(Guid id)
@@ -104,6 +105,7 @@ namespace StudentWebApi.Controllers
             }
         }
 
+
         [HttpGet("get-student-by-name/{name}")]
         public List<Student> GetStudentsByName(string name)
         {
@@ -111,11 +113,16 @@ namespace StudentWebApi.Controllers
             return students;
         }
 
+
+
+
         [HttpGet("get-student-by-email/{email}")]
         public List<Student> GetStudentsByEmail(string email)
         {
             var students = _studentRepository.GetQueryable().Where(x => x.Email.Contains(email)).ToList();
             return students;
         }
+
+
     }
 }
