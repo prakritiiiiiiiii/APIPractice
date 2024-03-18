@@ -115,15 +115,16 @@ namespace StudentWebApi.Controllers
 
 
 
-
         [HttpGet("get-student-by-email/{email}")]
         public List<Student> GetStudentsByEmail(string email)
         {
-            var students = _studentRepository.GetQueryable().Where(x => x.Email.Contains(email)).ToList();
+            var  students = _studentRepository.GetQueryable().Where(x => x.Name.Contains(email)).ToList();
             return students;
         }
+         
 
         
+       
 
     }
 }
