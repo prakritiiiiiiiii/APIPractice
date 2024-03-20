@@ -50,7 +50,7 @@ namespace StudentWebApi.Controllers
 
         [HttpPost("update-student")]
 
-        public OperationResponse UpdateStudents(Student student )
+        public OperationResponse UpdateStudents(Student student)
         {
             try
             {
