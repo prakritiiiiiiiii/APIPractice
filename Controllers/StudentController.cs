@@ -12,7 +12,7 @@ namespace StudentWebApi.Controllers
     {
         private readonly IStudentRepository _studentRepository;
 
-        public StudentController(IStudentRepository studentRepository)
+        public StudentController(IStudentRepository  studentRepository)
         {
             _studentRepository = studentRepository;
         }
