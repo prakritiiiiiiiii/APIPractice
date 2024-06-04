@@ -5,6 +5,7 @@ using StudentWebApi.Model;
 using System.Security.Policy;
 
 namespace StudentWebApi.Controllers
+
 {
     [Route("api/[controller]")]
     [ApiController]
