@@ -62,7 +62,7 @@ namespace StudentWebApi.Controllers
                 }
                 else
                 {
-                    return new OperationResponse { Status = true, Message = "Student is updated succesfully.", RowsAffected = row };
+                    return new OperationResponse { Status = true, Message = "Student is updated successfully.", RowsAffected = row };
                 }
                 
             }
