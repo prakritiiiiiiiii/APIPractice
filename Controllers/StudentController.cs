@@ -35,7 +35,7 @@ namespace StudentWebApi.Controllers
                 var row = _studentRepository.Insert(student);
                 if (row == 0)
                 {
-                    return new OperationResponse { Status = false, Message = "Unable to inset the student", RowsAffected = row };
+                    return new OperationResponse { Status = false, Message = "Unable to insert student", RowsAffected = row };
                 }
                 else
                 {
@@ -62,7 +62,7 @@ namespace StudentWebApi.Controllers
                 }
                 else
                 {
-                    return new OperationResponse { Status = true, Message = "Student updated succesfully.", RowsAffected = row };
+                    return new OperationResponse { Status = true, Message = "Student is updated succesfully.", RowsAffected = row };
                 }
                 
             }
@@ -95,7 +95,7 @@ namespace StudentWebApi.Controllers
                 var row = _studentRepository.Delete(student);
                 if (row == 0)
                 {
-                    return new OperationResponse { Status = false, Message = "Unable to delete the student", RowsAffected = row };
+                    return new OperationResponse { Status = false, Message = "Unable to delete student", RowsAffected = row };
 
                 }
                 else
