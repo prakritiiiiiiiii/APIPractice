@@ -10,7 +10,7 @@ namespace StudentWebApi.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly IStudentRepository _studentRepository;
+        private readonly IStudentRepository _studentRepository; 
 
         public StudentController(IStudentRepository  studentRepository)
         {
