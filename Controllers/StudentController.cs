@@ -18,7 +18,7 @@ namespace StudentWebApi.Controllers
             _studentRepository = studentRepository;
         }
 
-        // GET: api/student/get-all-student
+        // GET: api/student/get-all-students
         [HttpGet("get-all-student")]
 
         public List<Student> GetAllStudents()
