@@ -116,7 +116,6 @@ namespace StudentWebApi.Controllers
         }
 
 
-
         [HttpGet("get-student-by-email/{email}")]
         public List<Student> GetStudentsByEmail(string email)
         {
